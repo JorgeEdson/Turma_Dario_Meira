@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LebenCode.Console", "LebenCode.Console\LebenCode.Console.csproj", "{856B1026-8D3F-4213-B5E2-94711A76A52C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LebenCode.Logica", "LebenCode.Logica\LebenCode.Logica.csproj", "{EAE38EB4-F4ED-4FB2-966F-8FC1E77C6BF0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{856B1026-8D3F-4213-B5E2-94711A76A52C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{856B1026-8D3F-4213-B5E2-94711A76A52C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{856B1026-8D3F-4213-B5E2-94711A76A52C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{856B1026-8D3F-4213-B5E2-94711A76A52C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAE38EB4-F4ED-4FB2-966F-8FC1E77C6BF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAE38EB4-F4ED-4FB2-966F-8FC1E77C6BF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAE38EB4-F4ED-4FB2-966F-8FC1E77C6BF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAE38EB4-F4ED-4FB2-966F-8FC1E77C6BF0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4421E133-7348-40E2-8707-5D4840C3004B}
+	EndGlobalSection
+EndGlobal
