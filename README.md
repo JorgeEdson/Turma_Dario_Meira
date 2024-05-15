@@ -14,3 +14,5 @@
 - O que é variaveis
 - Concatenaçao
 - Comentarios em linha
+
+14/05/2024 - Aula 2
