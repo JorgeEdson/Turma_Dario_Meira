@@ -9,6 +9,8 @@ namespace LebenCode.Logica.Menu
 
         //Exemplos sequencias
         private Sequencial1 sequencial1 = new Sequencial1();
+        private Sequencial2 sequencial2 = new Sequencial2();
+        private Sequencial3 sequencial3 = new Sequencial3();
 
         //Exemplos condicionais
 
@@ -62,7 +64,7 @@ namespace LebenCode.Logica.Menu
         {
             Console.Clear();
             Console.WriteLine("Digite o número correspondente do exemplo Sequencial:\n ");
-            Console.Write($"1 - {sequencial1.Nome}\t");
+            Console.WriteLine($"1 - {sequencial1.Nome}\t | 2 - {sequencial2.Nome }\t | 3 - {sequencial3.Nome}");
             
 
             int opcao;
@@ -75,7 +77,18 @@ namespace LebenCode.Logica.Menu
             switch (opcao)
             {
                 case 1:
+                    Console.Clear();
                     sequencial1.Executar();
+                    PerguntaSeQuerContinuar();
+                    break;
+                case 2:
+                    Console.Clear();
+                    sequencial2.Executar();
+                    PerguntaSeQuerContinuar();
+                    break;
+                case 3:
+                    Console.Clear();
+                    sequencial3.Executar();
                     PerguntaSeQuerContinuar();
                     break;
             }
