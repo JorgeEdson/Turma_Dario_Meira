@@ -8,7 +8,7 @@
         }
 
         public override void Executar()
-        {
+    {
             //Entrada de dados
             Console.WriteLine("Digite a base do retângulo:");
             decimal baseRetangulo = decimal.Parse(Console.ReadLine());
