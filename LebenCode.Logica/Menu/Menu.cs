@@ -1,4 +1,5 @@
-﻿using LebenCode.Logica.Exemplos.Sequenciais;
+﻿using LebenCode.Logica.Exemplos.Condicionais;
+using LebenCode.Logica.Exemplos.Sequenciais;
 
 namespace LebenCode.Logica.Menu
 {
@@ -14,6 +15,7 @@ namespace LebenCode.Logica.Menu
         private Sequencial4 sequencial4 = new Sequencial4();
 
         //Exemplos condicionais
+        private Condicional1 condicional1 = new Condicional1();
 
         //Exemplos repetição
 
@@ -104,6 +106,25 @@ namespace LebenCode.Logica.Menu
         private void ExibirExemplosDeCondicionais()
         {
             Console.Clear();
+            Console.WriteLine("Digite o número correspondente do exemplo Condicional:\n ");
+            Console.WriteLine($"1 - {condicional1.Nome}\t |");
+
+            int opcao;
+            while (!int.TryParse(Console.ReadLine(), out opcao) || opcao < 1 || opcao > 10)
+            {
+                Console.WriteLine("Opção inválida. Tente novamente.");
+                Console.Write("Digite o número correspondente ao exemplo:");
+            }
+
+            switch (opcao)
+            {
+                case 1:
+                    Console.Clear();
+                    condicional1.Executar();
+                    PerguntaSeQuerContinuar();
+                    break;                
+            }
+
         }
 
         private void ExibirExemplosDeRepeticao()
