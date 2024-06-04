@@ -1,4 +1,7 @@
-﻿using LebenCode.Logica.Exemplos.Sequenciais;
+﻿//Escreva um algoritmo para ler o salário atual de um funcionário e o percentual de reajuste.
+//Calcular e escrever o valor do novo salário.
+
+using LebenCode.Logica.Exemplos.Sequenciais;
 
 namespace LebenCode.Logica.Menu
 {
