@@ -9,7 +9,7 @@ namespace LebenCode.Logica.Exemplos.Condicionais
     {
         public Condicional2()
         {
-            Nome = "Mostra antecessor";
+            Nome = "Calcular média";
         }
 
         public override void Executar()

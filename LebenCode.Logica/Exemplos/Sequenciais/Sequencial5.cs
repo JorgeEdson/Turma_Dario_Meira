@@ -8,6 +8,10 @@ namespace LebenCode.Logica.Exemplos.Sequenciais
 {
     public class Sequencial5 : Exemplo
     {
+        public Sequencial5()
+        {
+            Nome = "Calcula idade em dias.";
+        }
         public override void Executar()
         {
             DateTime idadePessoa = new DateTime(1999, 03, 25);

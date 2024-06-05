@@ -9,8 +9,14 @@ using System.Threading.Tasks;
 
 namespace LebenCode.Logica.Exemplos.Sequenciais
 {
+
     public class Sequencial6 : Exemplo
     {
+
+        public Sequencial6()
+        {
+            Nome = "Algoritmo Salário com reajuste";
+        }
         public override void Executar()
         {
             decimal salarioAtual = 1320.00m;
