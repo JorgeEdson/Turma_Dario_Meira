@@ -1,6 +1,4 @@
-﻿//Escreva um algoritmo para ler o salário atual de um funcionário e o percentual de reajuste.
-//Calcular e escrever o valor do novo salário.
-
+﻿using LebenCode.Logica.Exemplos.Condicionais;
 using LebenCode.Logica.Exemplos.Sequenciais;
 
 namespace LebenCode.Logica.Menu
@@ -14,8 +12,10 @@ namespace LebenCode.Logica.Menu
         private Sequencial1 sequencial1 = new Sequencial1();
         private Sequencial2 sequencial2 = new Sequencial2();
         private Sequencial3 sequencial3 = new Sequencial3();
+        private Sequencial4 sequencial4 = new Sequencial4();
 
         //Exemplos condicionais
+        private Condicional1 condicional1 = new Condicional1();
 
         //Exemplos repetição
 
@@ -68,6 +68,7 @@ namespace LebenCode.Logica.Menu
             Console.Clear();
             Console.WriteLine("Digite o número correspondente do exemplo Sequencial:\n ");
             Console.WriteLine($"1 - {sequencial1.Nome}\t | 2 - {sequencial2.Nome }\t | 3 - {sequencial3.Nome}");
+            Console.WriteLine($"4 - {sequencial4.Nome}\t | ");
             
 
             int opcao;
@@ -94,12 +95,36 @@ namespace LebenCode.Logica.Menu
                     sequencial3.Executar();
                     PerguntaSeQuerContinuar();
                     break;
+                case 4:
+                    Console.Clear();
+                    sequencial4.Executar();
+                    PerguntaSeQuerContinuar();
+                    break;
             }
         }
 
         private void ExibirExemplosDeCondicionais()
         {
             Console.Clear();
+            Console.WriteLine("Digite o número correspondente do exemplo Condicional:\n ");
+            Console.WriteLine($"1 - {condicional1.Nome}\t |");
+
+            int opcao;
+            while (!int.TryParse(Console.ReadLine(), out opcao) || opcao < 1 || opcao > 10)
+            {
+                Console.WriteLine("Opção inválida. Tente novamente.");
+                Console.Write("Digite o número correspondente ao exemplo:");
+            }
+
+            switch (opcao)
+            {
+                case 1:
+                    Console.Clear();
+                    condicional1.Executar();
+                    PerguntaSeQuerContinuar();
+                    break;                
+            }
+
         }
 
         private void ExibirExemplosDeRepeticao()
