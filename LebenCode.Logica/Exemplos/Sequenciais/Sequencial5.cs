@@ -11,9 +11,17 @@ namespace LebenCode.Logica.Exemplos.Sequenciais
         public override void Executar()
         {
             DateTime idadePessoa = new DateTime(1999, 03, 25);
+            DateTime dataAtual = DateTime.Now;
+
+            TimeSpan diferenca = dataAtual.Subtract(idadePessoa);
+            int idadeEmDias = diferenca.Days;
+
+            Console.WriteLine("A idade da pessoa em dias é: " + idadeEmDias);
+            Console.WriteLine("A data de nascimento desta pessoa é: " + idadePessoa);
 
 
-            Console.WriteLine(idadePessoa);
+
+            
         }
     }
 }
