@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LebenCode.Console", "LebenCode.Console\LebenCode.Console.csproj", "{856B1026-8D3F-4213-B5E2-94711A76A52C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LebenCode.Console", "LebenCode.Console\LebenCode.Console.csproj", "{856B1026-8D3F-4213-B5E2-94711A76A52C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LebenCode.Logica", "LebenCode.Logica\LebenCode.Logica.csproj", "{EAE38EB4-F4ED-4FB2-966F-8FC1E77C6BF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LebenCode.Logica", "LebenCode.Logica\LebenCode.Logica.csproj", "{EAE38EB4-F4ED-4FB2-966F-8FC1E77C6BF0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
