@@ -13,13 +13,17 @@ namespace LebenCode.Logica.Menu
         private Sequencial2 sequencial2 = new Sequencial2();
         private Sequencial3 sequencial3 = new Sequencial3();
         private Sequencial4 sequencial4 = new Sequencial4();
+        private Sequencial5 sequencial5 = new Sequencial5();
+        private Sequencial6 sequencial6 = new Sequencial6();
         private Sequencial7 sequencial7 = new Sequencial7();
         private Sequencial8 sequencial8 = new Sequencial8();
 
 
         //Exemplos condicionais
         private Condicional1 condicional1 = new Condicional1();
+        private Condicional2 condicional2 = new Condicional2();
         private Condicional3 condicional3 = new Condicional3();
+
 
         //Exemplos repetição
 
@@ -71,6 +75,11 @@ namespace LebenCode.Logica.Menu
         {
             Console.Clear();
             Console.WriteLine("Digite o número correspondente do exemplo Sequencial:\n ");
+            Console.WriteLine($"1 - {sequencial1.Nome}\t | 2 - \t | 3 - {sequencial3.Nome}");
+            Console.WriteLine($"4 - {sequencial4.Nome}\t | ");
+            Console.WriteLine($"5 - {sequencial5.Nome}\t | 6 - {sequencial6.Nome}");
+
+
             Console.WriteLine($"1 - {sequencial1.Nome}\t | 2 - {sequencial2.Nome }\t | 3 - {sequencial3.Nome}");
             Console.WriteLine($"4 - {sequencial4.Nome}\t | 7 - {sequencial7.Nome} \t | 8 - {sequencial8.Nome}");
             
@@ -93,7 +102,6 @@ namespace LebenCode.Logica.Menu
                     break;
                 case 2:
                     Console.Clear();
-                    sequencial2.Executar();
                     PerguntaSeQuerContinuar();
                     break;
                 case 3:
@@ -104,6 +112,16 @@ namespace LebenCode.Logica.Menu
                 case 4:
                     Console.Clear();
                     sequencial4.Executar();
+                    PerguntaSeQuerContinuar();
+                    break;
+                case 5:
+                    Console.Clear();
+                    sequencial5.Executar();
+                    PerguntaSeQuerContinuar();
+                    break;
+                case 6:
+                    Console.Clear();
+                    sequencial6.Executar();
                     PerguntaSeQuerContinuar();
                     break;
                 case 7:
@@ -123,7 +141,8 @@ namespace LebenCode.Logica.Menu
         {
             Console.Clear();
             Console.WriteLine("Digite o número correspondente do exemplo Condicional:\n ");
-            Console.WriteLine($"1 - {condicional1.Nome}\t | 3 - {condicional3.Nome}\t |");
+            Console.WriteLine($"1 - {condicional1.Nome}\t | 2 - {condicional2.Nome}\t | 3 - {condicional3.Nome}\t");
+            
 
             int opcao;
             while (!int.TryParse(Console.ReadLine(), out opcao) || opcao < 1 || opcao > 10)
@@ -138,6 +157,12 @@ namespace LebenCode.Logica.Menu
                     Console.Clear();
                     condicional1.Executar();
                     PerguntaSeQuerContinuar();
+                    break;
+                case 2:
+                    Console.Clear();
+                    condicional2.Executar();
+                    PerguntaSeQuerContinuar();
+                    break;
                     break;
                 case 3:
                     Console.Clear();
